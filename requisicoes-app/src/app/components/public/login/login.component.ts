@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  async enviarLink(){
+  async enviaLink(){
     const {value:email} = await Swal.fire({
       title:'Informe o email cadastrado',
       input: 'email',
