@@ -8,7 +8,7 @@ import firebase from 'firebase/compat/app';
 })
 export class AuthenticationService {
 
-  private user:Observable<firebase.User|null >;
+  private user:Observable<firebase.User | null>;
 
   constructor(private afAuth:AngularFireAuth) {
     this.user = afAuth.authState
@@ -24,5 +24,9 @@ export class AuthenticationService {
    
    resetPassword(email:string){
     return this.afAuth.sendPasswordResetEmail(email)
+   }
+
+   authUser():Observable<firebase.User | null>{
+    return this.user
    }
 }
