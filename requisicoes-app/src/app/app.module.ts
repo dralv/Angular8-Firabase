@@ -7,6 +7,8 @@ import {AngularFireAuthModule} from '@angular/fire/compat/auth'
 import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 
+import { DialogModule } from 'primeng/dialog';
+
 
 
 
@@ -29,6 +31,7 @@ import { MenuComponent } from './components/admin/menu/menu.component';
     AngularFireAuthModule,
     AngularFirestoreModule,
     FormsModule,
+    DialogModule
     
   ],
   providers: [],

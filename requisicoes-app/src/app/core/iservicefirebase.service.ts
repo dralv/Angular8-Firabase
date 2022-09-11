@@ -23,7 +23,7 @@ export abstract class ServiceFirebase<T extends Model> implements Icrud<T> {
     return this.ref.valueChanges()
   }
 
-  createOrUpdate(item: T): Promise<any> | undefined{
+  createOrUpdate(item: T): Promise< any>  | any  {
     let id = item.id;
     if (!item)
       return
